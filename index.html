@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>si</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-icon">
+      <h1>Yes.</h1>
+    </div>
+    <ul class="items">
+      <li class="nav-item">Yes</li>
+      <li class="nav-item">Yes</li>
+      <li class="nav-item">Yes</li>
+    </ul>
+    <div class="button-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  <div class="hero">
+    <h1>Landing Page</h1>
+    <h2>Landing subtitle</h2>
+  </div>
+  <div class="content">
+    <div class="main">
+      <h1>Our mission is fuck yourself!</h1>
+      <h2>Go fuck yourself!</h2>
+    </div>
+    <div class="content-group">
+      <section class="first-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam obcaecati sint dicta voluptatum vitae
+          veniam, eius magnam repudiandae recusandae molestias eum officia neque quas, quam atque aspernatur repellendus
+          ad.</p>
+      </section>
+      <section class="second-content">
+        <h2>Go fuck everything!</h2>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <h3>Go fuck yourself</h3>
+    <h4>Yes.</h4>
+  </footer>
+
+
+
+
+
+  <script>
+    const button = document.querySelector(".button-nav");
+    const items = document.querySelector(".items");
+
+
+    button.addEventListener("click", MobileMenu);
+
+    function MobileMenu() {
+      button.classList.toggle("active");
+      items.classList.toggle("active");
+    }
+
+    const links = document.querySelectorAll(".nav-item");
+
+    links.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      button.classList.remove("active");
+      items.classList.remove("active");
+    }
+
+  </script>
+</body>
+
+</html>
